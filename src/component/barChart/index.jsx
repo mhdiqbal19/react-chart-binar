@@ -35,7 +35,7 @@ const BarChart = ({dataChart}) => {
   console.log("data Chart", dataChart);
 
   return (
-    <div className='m-10'>
+    <div className='p-10 w-1/2 mx-auto bg-white rounded-md mb-10'>
       <Bar data={dataChart}/>
     </div>
   )

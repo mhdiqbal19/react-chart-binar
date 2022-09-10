@@ -51,9 +51,14 @@ const Home = () => {
 
 
   return (
-    <div className='container bg-green-200 w-full h-screen flex justify-center pt-48'>
-        {dataChart.labels.length && <BarChart dataChart={dataChart}/>}
-        {dataPay.labels.length && <LineChart dataPay={dataPay}/>}
+    <div>
+        <div className='font-bold text-3xl text-center text-slate-800'>
+            <h1>Chart JS</h1>
+        </div>
+        <div className='container mt-10 flex gap-3 justify-center'>
+            {dataChart.labels.length && <BarChart dataChart={dataChart}/>}
+            {dataPay.labels.length && <LineChart dataPay={dataPay}/>}
+        </div>
     </div>
   )
 }

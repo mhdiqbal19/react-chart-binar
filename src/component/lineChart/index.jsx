@@ -33,7 +33,7 @@ ChartJS.register(
 const LineChart = ({dataPay}) => {
     console.log("data pay", dataPay);
   return (
-    <div className='m-10'>
+    <div className='p-10 w-1/2 mx-auto bg-white rounded-md mb-10'>
         <Line data={dataPay}/>
     </div>
   )
